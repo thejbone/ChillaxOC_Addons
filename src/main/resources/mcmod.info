@@ -1,10 +1,10 @@
 [
   {
-    "modid": "ChillaxOC_Addons",
-    "name": "ChillaxOC_Addons",
+    "modid": "chillaxocaddons",
+    "name": "ChillaxOC Addons",
     "description": "Some random addons for the Chillax Organized Crime modpack",
-    "version": "${version}",
-    "mcversion": "${mcversion}",
+    "version": "1.0",
+    "mcversion": "1.12",
     "url": "www.chillax-mc.com",
     "updateUrl": "",
     "authorList": [

@@ -1,6 +1,6 @@
-package com.chillaxmc.chillaxoc_addons.init;
+package com.chillaxmc.chillaxocaddons.init;
 
-import com.chillaxmc.chillaxoc_addons.item.CHCoins;
+import com.chillaxmc.chillaxocaddons.item.CHCoins;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderItem;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;

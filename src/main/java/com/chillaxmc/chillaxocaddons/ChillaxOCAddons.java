@@ -1,24 +1,19 @@
-package com.chillaxmc.chillaxoc_addons;
+package com.chillaxmc.chillaxocaddons;
 
-import com.chillaxmc.chillaxoc_addons.init.CHItems;
-import com.chillaxmc.chillaxoc_addons.init.CHRecipes;
-import net.minecraft.block.Block;
-import net.minecraft.item.Item;
+import com.chillaxmc.chillaxocaddons.init.CHItems;
+import com.chillaxmc.chillaxocaddons.init.CHRecipes;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod(
-        modid = ChillaxOC_Addons.MOD_ID,
-        name = ChillaxOC_Addons.MOD_NAME,
-        version = ChillaxOC_Addons.VERSION
+        modid = ChillaxOCAddons.MOD_ID,
+        name = ChillaxOCAddons.MOD_NAME,
+        version = ChillaxOCAddons.VERSION
 )
-public class ChillaxOC_Addons {
+public class ChillaxOCAddons {
 
     public static final String MOD_ID = "chillaxocaddons";
     public static final String MOD_NAME = "ChillaxOC Addons";
@@ -28,7 +23,7 @@ public class ChillaxOC_Addons {
      * This is the instance of your mod as created by Forge. It will never be null.
      */
     @Mod.Instance(MOD_ID)
-    public static ChillaxOC_Addons INSTANCE;
+    public static ChillaxOCAddons INSTANCE;
 
     /**
      * This is the first initialization event. Register tile entities here.
@@ -36,7 +31,7 @@ public class ChillaxOC_Addons {
      */
     @Mod.EventHandler
     public void preinit(FMLPreInitializationEvent event) {
-        MinecraftForge.EVENT_BUS.register(ChillaxOC_Addons.INSTANCE);
+        MinecraftForge.EVENT_BUS.register(ChillaxOCAddons.INSTANCE);
         CHItems.register(event);
         CHRecipes.FurnaceRegister(event);
     }

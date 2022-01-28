@@ -1,7 +1,7 @@
-package com.chillaxmc.chillaxoc_addons.item;
+package com.chillaxmc.chillaxocaddons.item;
 
-import com.chillaxmc.chillaxoc_addons.creativetab.CHCreativeTabs;
-import com.chillaxmc.chillaxoc_addons.init.CHItems;
+import com.chillaxmc.chillaxocaddons.creativetab.CHCreativeTabs;
+import com.chillaxmc.chillaxocaddons.init.CHItems;
 import net.minecraft.item.Item;
 
 public class CHCoins extends Item {
@@ -10,7 +10,7 @@ public class CHCoins extends Item {
         this.setMaxStackSize(maxStack);
         this.setRegistryName(name);
         this.setTranslationKey(name);
-        this.setCreativeTab(CHCreativeTabs.ChillaxOC_Addons);
+        this.setCreativeTab(CHCreativeTabs.ChillaxOCAddons);
         addToItems(this);
     }
 

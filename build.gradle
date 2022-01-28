@@ -15,7 +15,7 @@ group = 'com.chillaxmc'
 version = '1.0.0'
 
 java {
-    archivesBaseName = 'ChillaxOC_Addons'
+    archivesBaseName = 'ChillaxOCAddons'
     toolchain.languageVersion = JavaLanguageVersion.of(8)
 }
 
@@ -54,7 +54,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             mods {
-                chillaxoc_addons {
+                chillaxocaddons {
                     source sourceSets.main
                 }
             }
@@ -76,7 +76,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             mods {
-                chillaxoc_addons {
+                chillaxocaddons {
                     source sourceSets.main
                 }
             }
@@ -120,7 +120,7 @@ dependencies {
 jar {
     manifest {
         attributes([
-                "Specification-Title"     : "chillaxoc_addons",
+                "Specification-Title"     : "chillaxocaddons",
                 "Specification-Vendor"    : "TheJbone",
                 "Specification-Version"   : "1", // We are version 1 of ourselves
                 "Implementation-Title"    : project.name,

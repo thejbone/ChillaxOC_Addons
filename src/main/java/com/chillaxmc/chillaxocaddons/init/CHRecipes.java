@@ -1,4 +1,4 @@
-package com.chillaxmc.chillaxoc_addons.init;
+package com.chillaxmc.chillaxocaddons.init;
 
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;

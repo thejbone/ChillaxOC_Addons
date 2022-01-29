@@ -1,6 +1,7 @@
 package com.chillaxmc.chillaxocaddons.init;
 
 import com.chillaxmc.chillaxocaddons.item.CHCoins;
+import com.chillaxmc.chillaxocaddons.item.CHDrugs;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderItem;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -20,6 +21,13 @@ public class CHItems {
     public static final Item diamond_coin = new CHCoins("diamond_coin", 8);
     public static final Item emerald_coin = new CHCoins("emerald_coin", 8);
     public static final Item platinum_coin = new CHCoins("platinum_coin", 8);
+    public static final Item joint = new CHDrugs("joint", 64);
+    public static final Item cocaine_bag = new CHDrugs("cocaine_bag", 64);
+    public static final Item cocaine_brick = new CHDrugs("cocaine_brick", 64);
+    public static final Item shroom_1 = new CHDrugs("shroom_1", 64);
+    public static final Item shroom_2 = new CHDrugs("shroom_2", 64);
+    public static final Item tobacco_cigar = new CHDrugs("tobacco_cigar", 64);
+    public static final Item tobacco_dip = new CHDrugs("tobacco_dip", 64);
 
     private static List<Item> getItems() {
         return items;

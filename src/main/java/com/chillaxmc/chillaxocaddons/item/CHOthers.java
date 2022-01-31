@@ -7,13 +7,11 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-public class CHCoins extends Item {
-
-    public CHCoins(String name, int maxStack) {
+public class CHOthers extends Item {
+    public CHOthers(String name, int maxStack) {
         this.setMaxStackSize(maxStack);
         this.setRegistryName(name);
         this.setTranslationKey(name);
-
         this.setCreativeTab(CHCreativeTabs.ChillaxOCAddons);
         addToItems(this);
     }
@@ -25,6 +23,6 @@ public class CHCoins extends Item {
     @Override
     public void addInformation(ItemStack stack, World worldIn, java.util.List<java.lang.String> tooltip, ITooltipFlag flagIn)  {
         super.addInformation(stack, worldIn, tooltip, flagIn);
-        tooltip.add("Chillax Coins");
+        tooltip.add("Chillax Items");
     }
 }

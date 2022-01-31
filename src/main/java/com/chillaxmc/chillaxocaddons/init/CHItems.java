@@ -2,6 +2,7 @@ package com.chillaxmc.chillaxocaddons.init;
 
 import com.chillaxmc.chillaxocaddons.item.CHCoins;
 import com.chillaxmc.chillaxocaddons.item.CHDrugs;
+import com.chillaxmc.chillaxocaddons.item.CHOthers;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderItem;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -28,6 +29,17 @@ public class CHItems {
     public static final Item shroom_2 = new CHDrugs("shroom_2", 64);
     public static final Item tobacco_cigar = new CHDrugs("tobacco_cigar", 64);
     public static final Item tobacco_dip = new CHDrugs("tobacco_dip", 64);
+    public static final Item tobacco_seeds = new CHDrugs("tobacco_seeds", 64);
+    public static final Item heroin_bag = new CHDrugs("heroin_bag", 64);
+    public static final Item acid_tablet = new CHDrugs("acid_tablet", 64);
+    public static final Item blue_perc_30 = new CHDrugs("blue_perc_30", 64);
+    public static final Item white_perc_30 = new CHDrugs("white_perc_30", 64);
+    public static final Item cig_pack = new CHDrugs("cig_pack", 64);
+    public static final Item meth_baggie_black = new CHDrugs("meth_baggie_black", 64);
+    public static final Item meth_baggie_white = new CHDrugs("meth_baggie_white", 64);
+    public static final Item meth_cubes = new CHDrugs("meth_cubes", 64);
+    public static final Item money_stack = new CHOthers("money_stack", 64);
+
 
     private static List<Item> getItems() {
         return items;

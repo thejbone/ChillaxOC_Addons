@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "ccc",
+    "aab",
+    "ccc"
+  ],
+  "key":
+  {
+    "a":
+    {
+      "item": "chillaxocaddons:dried_tobacco_leaf",
+      "data": 0
+    },
+    "b":
+    {
+      "item": "chillaxocaddons:paper_filter",
+      "data": 0
+    },
+    "c":
+    {
+      "item": "chillaxocaddons:rolling_paper",
+      "data": 0
+    }
+  },
+  "result":
+  {
+    "item": "chillaxocaddons:tobacco_cigar",
+    "count": 5,
+    "data": 0
+  }
+}

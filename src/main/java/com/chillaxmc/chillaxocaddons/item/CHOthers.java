@@ -20,9 +20,4 @@ public class CHOthers extends Item {
         CHItems.items.add(item);
     }
 
-    @Override
-    public void addInformation(ItemStack stack, World worldIn, java.util.List<java.lang.String> tooltip, ITooltipFlag flagIn)  {
-        super.addInformation(stack, worldIn, tooltip, flagIn);
-        tooltip.add("Chillax Items");
-    }
 }

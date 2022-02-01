@@ -20,10 +20,4 @@ public class CHDrugs extends Item {
     private void addToItems(Item item) {
         CHItems.items.add(item);
     }
-
-    @Override
-    public void addInformation(ItemStack stack, World worldIn, java.util.List<java.lang.String> tooltip, ITooltipFlag flagIn)  {
-        super.addInformation(stack, worldIn, tooltip, flagIn);
-        tooltip.add("Chillax Drugs");
-    }
 }

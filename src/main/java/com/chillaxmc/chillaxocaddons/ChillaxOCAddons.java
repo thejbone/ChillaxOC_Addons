@@ -1,7 +1,9 @@
 package com.chillaxmc.chillaxocaddons;
 
+import com.chillaxmc.chillaxocaddons.init.CHBlocks;
 import com.chillaxmc.chillaxocaddons.init.CHItems;
 //import com.chillaxmc.chillaxocaddons.init.CHRecipes;
+import com.chillaxmc.chillaxocaddons.init.CHRecipes;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -33,6 +35,8 @@ public class ChillaxOCAddons {
     public void preinit(FMLPreInitializationEvent event) {
         MinecraftForge.EVENT_BUS.register(ChillaxOCAddons.INSTANCE);
         CHItems.register(event);
+        CHBlocks.register(event);
+        CHRecipes.FurnaceRegister(event);
     }
 
     /**
@@ -41,6 +45,7 @@ public class ChillaxOCAddons {
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         CHItems.registerRender(event);
+        CHBlocks.registerRender(event);
     }
 
     /**

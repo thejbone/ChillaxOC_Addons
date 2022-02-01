@@ -1,0 +1,20 @@
+{
+    "variants": {
+        "age=0": { "model": "chillaxocaddons:coca" },
+        "age=1": { "model": "chillaxocaddons:coca" },
+        "age=2": { "model": "chillaxocaddons:coca" },
+        "age=3": { "model": "chillaxocaddons:coca" },
+        "age=4": { "model": "chillaxocaddons:coca" },
+        "age=5": { "model": "chillaxocaddons:coca" },
+        "age=6": { "model": "chillaxocaddons:coca" },
+        "age=7": { "model": "chillaxocaddons:coca" },
+        "age=8": { "model": "chillaxocaddons:coca" },
+        "age=9": { "model": "chillaxocaddons:coca" },
+        "age=10": { "model": "chillaxocaddons:coca" },
+        "age=11": { "model": "chillaxocaddons:coca" },
+        "age=12": { "model": "chillaxocaddons:coca" },
+        "age=13": { "model": "chillaxocaddons:coca" },
+        "age=14": { "model": "chillaxocaddons:coca" },
+        "age=15": { "model": "chillaxocaddons:coca" }
+    }
+}

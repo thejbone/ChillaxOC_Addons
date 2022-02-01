@@ -1,0 +1,6 @@
+{
+  "parent": "chillaxocaddons:block/tobacco_crop",
+  "textures": {
+    "crop": "chillaxocaddons:blocks/tobacco_crop_stage3"
+  }
+}

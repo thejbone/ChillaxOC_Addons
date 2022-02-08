@@ -12,7 +12,7 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle'
 
 group = 'com.chillaxmc'
-version = '1.0.0'
+version = '1.0.3'
 
 java {
     archivesBaseName = 'ChillaxOCAddons'

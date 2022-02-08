@@ -7,9 +7,9 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-public class CHDrugs extends Item {
+public class CHHerbs extends Item {
 
-    public CHDrugs(String name, int maxStack) {
+    public CHHerbs(String name, int maxStack) {
         this.setMaxStackSize(maxStack);
         this.setRegistryName(name);
         this.setTranslationKey(name);

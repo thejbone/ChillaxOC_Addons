@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "aaa",
+    "a a",
+    "aaa"
+  ],
+  "key":
+  {
+    "a":
+    {
+      "item": "minecraft:paper",
+      "data": 0
+    }
+  },
+  "result":
+  {
+    "item": "chillaxocaddons:paper_filter",
+    "count": 4
+  }
+}

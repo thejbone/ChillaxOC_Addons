@@ -1,31 +1,23 @@
 package com.chillaxmc.chillaxocaddons;
 
-import com.chillaxmc.chillaxocaddons.init.CHBlocks;
-import com.chillaxmc.chillaxocaddons.init.CHItems;
-//import com.chillaxmc.chillaxocaddons.init.CHRecipes;
-import com.chillaxmc.chillaxocaddons.init.CHRecipes;
-import net.minecraftforge.common.MinecraftForge;
+import com.chillaxmc.chillaxocaddons.proxy.CommonProxy;
+import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.Mod;
 
-@Mod(
-        modid = ChillaxOCAddons.MOD_ID,
-        name = ChillaxOCAddons.MOD_NAME,
-        version = ChillaxOCAddons.VERSION
-)
+@Mod(modid = Reference.ID, name = Reference.NAME, version = Reference.VER)
 public class ChillaxOCAddons {
-
-    public static final String MOD_ID = "chillaxocaddons";
-    public static final String MOD_NAME = "ChillaxOC Addons";
-    public static final String VERSION = "1.0.0";
 
     /**
      * This is the instance of your mod as created by Forge. It will never be null.
      */
-    @Mod.Instance(MOD_ID)
+    @Mod.Instance(Reference.ID)
     public static ChillaxOCAddons INSTANCE;
+
+    @SidedProxy(clientSide = Reference.CLIENT_PROXY, serverSide = Reference.SERVER_PROXY)
+    private static CommonProxy proxy;
 
     /**
      * This is the first initialization event. Register tile entities here.
@@ -33,10 +25,8 @@ public class ChillaxOCAddons {
      */
     @Mod.EventHandler
     public void preinit(FMLPreInitializationEvent event) {
-        MinecraftForge.EVENT_BUS.register(ChillaxOCAddons.INSTANCE);
-        CHItems.register(event);
-        CHBlocks.register(event);
-        CHRecipes.FurnaceRegister(event);
+        proxy.preInit(event);
+
     }
 
     /**
@@ -44,8 +34,7 @@ public class ChillaxOCAddons {
      */
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
-        CHItems.registerRender(event);
-        CHBlocks.registerRender(event);
+        proxy.init(event);
     }
 
     /**
@@ -55,4 +44,5 @@ public class ChillaxOCAddons {
     public void postinit(FMLPostInitializationEvent event) {
 
     }
+
 }

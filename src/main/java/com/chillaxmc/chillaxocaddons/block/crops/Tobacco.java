@@ -1,5 +1,7 @@
 package com.chillaxmc.chillaxocaddons.block.crops;
 
+import com.chillaxmc.chillaxocaddons.ChillaxOCAddons;
+import com.chillaxmc.chillaxocaddons.ChillaxOCConfig;
 import com.chillaxmc.chillaxocaddons.creativetab.CHCreativeTabs;
 import com.chillaxmc.chillaxocaddons.init.CHBlocks;
 import com.chillaxmc.chillaxocaddons.init.CHItems;
@@ -57,11 +59,11 @@ public class Tobacco extends BlockCrops {
 
         if (getAge(state) >= getMaxAge()) {
             Item crop = getCrop();
-            i = new Random().nextInt(5);
+            i = new Random().nextInt(ChillaxOCConfig.tobaccoLeafCropAmount);
             if (i > 0)
                 drops.add(new ItemStack(crop, i));
 
-            i = new Random().nextInt(5);
+            i = new Random().nextInt(ChillaxOCConfig.tobaccoSeedsCropAmount);
             if(i > 0)
                 drops.add(new ItemStack(getSeed(), i));
         }

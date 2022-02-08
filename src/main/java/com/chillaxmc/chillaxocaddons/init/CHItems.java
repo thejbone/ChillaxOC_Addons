@@ -1,8 +1,7 @@
 package com.chillaxmc.chillaxocaddons.init;
 
 import com.chillaxmc.chillaxocaddons.item.CHCoins;
-import com.chillaxmc.chillaxocaddons.item.CHDrugs;
-import com.chillaxmc.chillaxocaddons.item.CHOthers;
+import com.chillaxmc.chillaxocaddons.item.CHHerbs;
 import com.chillaxmc.chillaxocaddons.item.CHSeeds;
 import com.chillaxmc.chillaxocaddons.item.smokables.TobaccoCigar;
 import net.minecraft.client.Minecraft;
@@ -24,28 +23,32 @@ public class CHItems {
     public static final Item diamond_coin = new CHCoins("diamond_coin", 8);
     public static final Item emerald_coin = new CHCoins("emerald_coin", 8);
     public static final Item platinum_coin = new CHCoins("platinum_coin", 8);
-    public static final Item joint = new CHDrugs("joint", 64);
-    public static final Item small_joint = new CHDrugs("small_joint", 64);
-    public static final Item cocaine_bag = new CHDrugs("cocaine_bag", 16);
-    public static final Item cocaine_brick = new CHDrugs("cocaine_brick", 16);
-    public static final Item shroom_1 = new CHDrugs("shroom_1", 64);
-    public static final Item shroom_2 = new CHDrugs("shroom_2", 64);
-    public static final Item tobacco_cigar = new TobaccoCigar("tobacco_cigar", 16);
-    public static final Item tobacco_dip = new CHDrugs("tobacco_dip", 16);
+    public static final Item joint = new CHHerbs("joint", 64);
+    public static final Item small_joint = new CHHerbs("small_joint", 64);
+    public static final Item cocaine_bag = new CHHerbs("cocaine_bag", 16);
+    public static final Item cocaine_brick = new CHHerbs("cocaine_brick", 16);
+    public static final Item shroom_1 = new CHHerbs("shroom_1", 64);
+    public static final Item shroom_2 = new CHHerbs("shroom_2", 64);
+    public static final Item tobacco_cigar = new TobaccoCigar("tobacco_cigar", 24);
+    public static final Item tobacco_dip = new CHHerbs("tobacco_dip", 16);
     public static final Item tobacco_seeds = new CHSeeds("tobacco_seeds", CHBlocks.tobacco_crop);
-    public static final Item tobacco_leaf = new CHDrugs("tobacco_leaf", 64);
-    public static final Item rolling_paper = new CHDrugs("rolling_paper", 64);
-    public static final Item paper_filter = new CHDrugs("paper_filter", 64);
-    public static final Item dried_tobacco_leaf = new CHDrugs("dried_tobacco_leaf", 64);
-    public static final Item heroin_bag = new CHDrugs("heroin_bag", 32);
-    public static final Item acid_tablet = new CHDrugs("acid_tablet", 64);
-    public static final Item blue_perc_30 = new CHDrugs("blue_perc_30", 64);
-    public static final Item white_perc_30 = new CHDrugs("white_perc_30", 64);
-    public static final Item cig_pack = new CHDrugs("cig_pack", 16);
-    public static final Item meth_baggie = new CHDrugs("meth_baggie", 32);
-    public static final Item meth_cubes = new CHDrugs("meth_cubes", 64);
-    public static final Item money_stack = new CHOthers("money_stack", 64);
-
+    public static final Item tobacco_leaf = new CHHerbs("tobacco_leaf", 64);
+    public static final Item rolling_paper = new CHHerbs("rolling_paper", 64);
+    public static final Item paper_filter = new CHHerbs("paper_filter", 64);
+    public static final Item dried_tobacco_leaf = new CHHerbs("dried_tobacco_leaf", 64);
+    public static final Item heroin_bag = new CHHerbs("heroin_bag", 32);
+    public static final Item acid_tablet = new CHHerbs("acid_tablet", 64);
+    public static final Item blue_perc_30 = new CHHerbs("blue_perc_30", 64);
+    public static final Item white_perc_30 = new CHHerbs("white_perc_30", 64);
+    public static final Item cig_pack = new CHHerbs("cig_pack", 16);
+    public static final Item meth_baggie = new CHHerbs("meth_baggie", 32);
+    public static final Item meth_cubes = new CHHerbs("meth_cubes", 64);
+    public static final Item tobacco_grinds = new CHHerbs("tobacco_grinds", 64);
+    public static final Item dried_coca = new CHHerbs("dried_coca", 64);
+    public static final Item coca_powder = new CHHerbs("coca_powder", 64);
+    public static final Item crack_cocaine = new CHHerbs("crack_cocaine", 64);
+    public static final Item mushroom_mix = new CHHerbs("mushroom_mix", 64);
+    public static final Item hash_muffin = new CHHerbs("hash_muffin", 16);
 
     private static List<Item> getItems() {
         return items;
@@ -58,6 +61,7 @@ public class CHItems {
             }
         }
     }
+
 
     public static void registerRender(FMLInitializationEvent event) {
         RenderItem renderItem = Minecraft.getMinecraft().getRenderItem();

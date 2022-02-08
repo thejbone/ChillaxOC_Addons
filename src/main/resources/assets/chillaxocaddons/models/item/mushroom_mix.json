@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "chillaxocaddons:items/money_stack"
+    "layer0": "chillaxocaddons:items/mushroom_mix"
   }
 }
